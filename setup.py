@@ -35,7 +35,7 @@ setup(
     keywords=['dcard', 'crawler', 'coroutine'],
 
     classifiers=[
-        'Development Status :: 4 - Beta'
+        'Development Status :: 4 - Beta',
         'Environment :: Console',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
