@@ -1,0 +1,8 @@
+*.swp
+.*/
+__pycache__/
+build/
+dist/
+aiodcard.egg-info/
+_build/
+.coverage
