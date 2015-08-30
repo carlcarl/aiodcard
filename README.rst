@@ -1,6 +1,9 @@
 aiodcard
 ==============
 
+[![Build Status](https://travis-ci.org/carlcarl/aiodcard.svg?branch=master)](https://travis-ci.org/carlcarl/aiodcard)
+[![Coverage Status](https://coveralls.io/repos/carlcarl/aiodcard/badge.svg?branch=master&service=github)](https://coveralls.io/github/carlcarl/aiodcard?branch=master)
+
 Dcard crawler using asyncio(coroutine)
 
 
