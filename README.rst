@@ -1,9 +1,10 @@
 aiodcard
 ==============
 
+.. image:: https://badge.fury.io/py/aiodcard.svg
+    :target: http://badge.fury.io/py/aiodcard
 .. image:: https://travis-ci.org/carlcarl/aiodcard.svg?branch=master
     :target: https://travis-ci.org/carlcarl/aiodcard
-
 .. image:: https://coveralls.io/repos/carlcarl/aiodcard/badge.svg?branch=master&service=github :target: https://coveralls.io/github/carlcarl/aiodcard?branch=master
 
 Dcard crawler using asyncio(coroutine)
