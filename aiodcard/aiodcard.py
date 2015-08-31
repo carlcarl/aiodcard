@@ -45,6 +45,7 @@ def download_image(session, image_url, image_folder, image_name):
     if response.status != 200:
         logger.error('Download image failed: %s', image_url)
         result['result'] = -1
+        yield from response.release()
         return result
     image_path = os.path.join(image_folder, image_name)
     image = yield from response.read()
@@ -61,11 +62,9 @@ def get_articles_of_page(session, forum_name, page_index):
     if response.status != 200:
         logger.error('Get article list failed: %s', url)
         yield from response.release()
-        session.close()
         return []
     articles_json = yield from response.json()
     yield from response.release()
-    session.close()
     return articles_json
 
 
@@ -76,7 +75,6 @@ def get_article(session, article_id):
     if response.status != 200:
         logger.error('Get article content failed: %s', url)
         yield from response.release()
-        session.close()
         return {}
     article_json = yield from response.json()
     yield from response.release()
