@@ -36,7 +36,8 @@ or
 Example
 -------
 
-::
+
+.. code:: python
 
     import asyncio
 
@@ -58,10 +59,6 @@ Example
     if __name__ == '__main__':
         main()
 
-
-Todo
-----
-* test all functions
   
 
 Authors and License
